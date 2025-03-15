@@ -1,3 +1,6 @@
+// Componentsディレクトリはsrcの外に作った
+// scr/appにおいてしまうとルーティングに利用されてしまうかもしれないため
+
 import { Link } from "@lazarv/react-server/navigation";
 import { PenTool } from "lucide-react";
 import { ReactNode } from "react"; // 追加

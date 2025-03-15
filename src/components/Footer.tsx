@@ -1,3 +1,6 @@
+// Componentsディレクトリはsrcの外に作った
+// scr/appにおいてしまうとルーティングに利用されてしまうかもしれないため
+
 export const Footer = () => {
         return (
           <footer className="w-full py-4 bg-white border-t max-h-24">
