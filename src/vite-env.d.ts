@@ -1,4 +1,4 @@
-// / <reference types="vite/client" />
+/// <reference types="vite/client" />
 
 // TypeScriptの型定義参照ディレクティブ
 // Viteが提供するクライアント側の型定義を参照することにより、Viteの環境で利用可能な型情報がTypeScriptコンパイラに認識される
