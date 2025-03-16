@@ -1,27 +1,3 @@
-// {
-//   "compilerOptions": {
-//     "target": "ES2020",
-//     "useDefineForClassFields": true,
-//     "module": "ESNext",
-//     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-//     "skipLibCheck": true,
-
-//     /* Bundler mode */
-//     "moduleResolution": "bundler",
-//     "allowImportingTsExtensions": true,
-//     "isolatedModules": true,
-//     "moduleDetection": "force",
-//     "noEmit": true,
-
-//     /* Linting */
-//     "strict": true,
-//     "noUnusedLocals": true,
-//     "noUnusedParameters": true,
-//     "noFallthroughCasesInSwitch": true
-//   },
-//   "include": ["src"]
-// }
-
 {
         "compilerOptions": {
           "jsx": "react-jsx", // 追加
@@ -45,6 +21,9 @@
           "noFallthroughCasesInSwitch": true,
           "noUncheckedSideEffectImports": true
         },
+// コンパイル対象のファイルを src ディレクトリ内のファイルに限定
+// コメントアウトされている行（"include": ["src/**/*", "global.d.ts"]）は、src ディレクトリ内のすべてのファイルと global.d.ts ファイルをコンパイル対象に含める設定
+// コンパイル（compile）とは、プログラミング言語で書かれたソースコードを、コンピュータが実行可能な形式に変換するプロセスのこと
         "include": ["src"]
         // "include": ["src/**/*", "global.d.ts"]
       }
