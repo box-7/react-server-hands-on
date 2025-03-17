@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import { Article } from "../domain/Article";
 
 export const LatestArticleList = () => {
-// ConvexはuseQueryを使って、convex/articles.txのgetメソッドを呼び出す
+  // ConvexはuseQueryを使って、convex/articles.txのgetメソッドを呼び出す
   const articlesData = useQuery(api.articles.get);
   const [articles, setArticles] = useState<Article[]>([]);
 
@@ -22,14 +22,14 @@ export const LatestArticleList = () => {
     if (!articlesData) return;
 
     const articles = articlesData?.map((a) => {
-// Convexから取得したデータを Articleクラスに変換して使う
+      // Convexから取得したデータを Articleクラスに変換して使う
       return new Article(
         a.id,
         a.title,
         a.description,
         a.author,
         a.createdAt,
-        a.viewCount
+        a.viewCount,
       );
     });
     setArticles(articles);
