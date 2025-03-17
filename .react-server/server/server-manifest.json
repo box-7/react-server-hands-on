@@ -1,0 +1,273 @@
+{
+  "_ArticleCard.Dm0xI500.mjs": {
+    "file": "server/src/components/ArticleCard.Dm0xI500.mjs",
+    "name": "src/components/ArticleCard"
+  },
+  "_ConvexClientProvider.D-WBEdfF.mjs": {
+    "file": "server/src/app/ConvexClientProvider.D-WBEdfF.mjs",
+    "name": "src/app/ConvexClientProvider",
+    "isDynamicEntry": true
+  },
+  "_LatestArticleList.d7kz2F5q.mjs": {
+    "file": "server/src/components/LatestArticleList.d7kz2F5q.mjs",
+    "name": "src/components/LatestArticleList"
+  },
+  "_PopularArticleList.DFyn7Y9y.mjs": {
+    "file": "server/PopularArticleList.DFyn7Y9y.mjs",
+    "name": "PopularArticleList",
+    "imports": [
+      "_ArticleCard.Dm0xI500.mjs"
+    ]
+  },
+  "_createLucideIcon.2Mv_0cer.mjs": {
+    "file": "server/createLucideIcon.2Mv_0cer.mjs",
+    "name": "createLucideIcon"
+  },
+  "_entrypoint.GBmmp3u4.mjs": {
+    "file": "server/entrypoint.GBmmp3u4.mjs",
+    "name": "entrypoint",
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs"
+    ],
+    "dynamicImports": [
+      "src/app/api/articles/GET.popular.server.ts",
+      "src/app/api/systems/GET.ping.server.ts",
+      "virtual:__react_server_router_page__/::/Users/torimototaishi/programming/tech-article-app/src/app/page.tsx::.jsx",
+      "_page.B0ArZ7kE.mjs",
+      "src/app/@pageName/(root).page.tsx",
+      "src/app/@pageName/(root).page.tsx",
+      "src/app/(root).layout.tsx",
+      "src/app/(root).layout.tsx",
+      "virtual:__react_server_router_page__/blogs::/Users/torimototaishi/programming/tech-article-app/src/app/blogs/page.tsx::.jsx",
+      "_page.BQBxNRX-.mjs",
+      "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+      "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+      "virtual:__react_server_router_page__/ConvexClientProvider::/Users/torimototaishi/programming/tech-article-app/src/app/ConvexClientProvider.tsx::.jsx",
+      "_ConvexClientProvider.D-WBEdfF.mjs",
+      "virtual:__react_server_router_page__/editor::/Users/torimototaishi/programming/tech-article-app/src/app/editor/page.tsx::.jsx",
+      "_page.Dmqq9ymA.mjs",
+      "virtual:__react_server_router_page__/popular::/Users/torimototaishi/programming/tech-article-app/src/app/popular/page.tsx::.jsx",
+      "_page.DQunmtvT.mjs",
+      "virtual:__react_server_router_page__/articles/[id]::/Users/torimototaishi/programming/tech-article-app/src/app/articles/[id]/page.tsx::.jsx",
+      "_page.CJuumVtk.mjs"
+    ]
+  },
+  "_page.B0ArZ7kE.mjs": {
+    "file": "server/page.B0ArZ7kE.mjs",
+    "name": "page",
+    "isDynamicEntry": true,
+    "imports": [
+      "_ArticleCard.Dm0xI500.mjs",
+      "_LatestArticleList.d7kz2F5q.mjs",
+      "_PopularArticleList.DFyn7Y9y.mjs",
+      "_createLucideIcon.2Mv_0cer.mjs"
+    ]
+  },
+  "_page.BQBxNRX-.mjs": {
+    "file": "server/page.BQBxNRX-.mjs",
+    "name": "page",
+    "isDynamicEntry": true
+  },
+  "_page.CJuumVtk.mjs": {
+    "file": "server/page.CJuumVtk.mjs",
+    "name": "page",
+    "isDynamicEntry": true
+  },
+  "_page.DQunmtvT.mjs": {
+    "file": "server/page.DQunmtvT.mjs",
+    "name": "page",
+    "isDynamicEntry": true,
+    "imports": [
+      "_ArticleCard.Dm0xI500.mjs",
+      "_PopularArticleList.DFyn7Y9y.mjs",
+      "_createLucideIcon.2Mv_0cer.mjs"
+    ]
+  },
+  "_page.Dmqq9ymA.mjs": {
+    "file": "server/page.Dmqq9ymA.mjs",
+    "name": "page",
+    "isDynamicEntry": true
+  },
+  "_react-server.Bhr5inAZ.mjs": {
+    "file": "server/@lazarv/react-server.Bhr5inAZ.mjs",
+    "name": "@lazarv/react-server"
+  },
+  "node_modules/@lazarv/react-server/lib/plugins/file-router/entrypoint.jsx": {
+    "file": "server/index.mjs",
+    "name": "server/index",
+    "src": "node_modules/@lazarv/react-server/lib/plugins/file-router/entrypoint.jsx",
+    "isEntry": true,
+    "imports": [
+      "_entrypoint.GBmmp3u4.mjs",
+      "_react-server.Bhr5inAZ.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/server/GlobalError.jsx": {
+    "file": "server/error.mjs",
+    "name": "server/error",
+    "src": "node_modules/@lazarv/react-server/server/GlobalError.jsx",
+    "isEntry": true,
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/server/render-rsc.jsx": {
+    "file": "server/render.mjs",
+    "name": "server/render",
+    "src": "node_modules/@lazarv/react-server/server/render-rsc.jsx",
+    "isEntry": true,
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs"
+    ]
+  },
+  "src/app/(root).layout.tsx": {
+    "file": "server/(root).layout.D5hdoUuG.mjs",
+    "name": "(root).layout",
+    "src": "src/app/(root).layout.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_ArticleCard.Dm0xI500.mjs",
+      "_createLucideIcon.2Mv_0cer.mjs",
+      "_ConvexClientProvider.D-WBEdfF.mjs"
+    ],
+    "css": [
+      "assets/(root)-BJv5YsUO.css"
+    ]
+  },
+  "src/app/@pageName/(root).page.tsx": {
+    "file": "server/(root).page.ZA6Qa1eX.mjs",
+    "name": "(root).page",
+    "src": "src/app/@pageName/(root).page.tsx",
+    "isDynamicEntry": true
+  },
+  "src/app/api/articles/GET.popular.server.ts": {
+    "file": "server/GET.popular.server.PBGH5D_9.mjs",
+    "name": "GET.popular.server",
+    "src": "src/app/api/articles/GET.popular.server.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_LatestArticleList.d7kz2F5q.mjs"
+    ]
+  },
+  "src/app/api/systems/GET.ping.server.ts": {
+    "file": "server/GET.ping.server.CA3zwsEq.mjs",
+    "name": "GET.ping.server",
+    "src": "src/app/api/systems/GET.ping.server.ts",
+    "isDynamicEntry": true
+  },
+  "src/app/blogs/@pageName/(blogsPageName).page.tsx": {
+    "file": "server/(blogsPageName).page.CrjVpNhf.mjs",
+    "name": "(blogsPageName).page",
+    "src": "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+    "isDynamicEntry": true
+  },
+  "virtual:__react_server_router_page__/::/Users/torimototaishi/programming/tech-article-app/src/app/page.tsx::.jsx": {
+    "file": "server/page.tsx__.CS-CorGI.mjs",
+    "name": "page.tsx__",
+    "src": "virtual:__react_server_router_page__/::/Users/torimototaishi/programming/tech-article-app/src/app/page.tsx::.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs",
+      "_entrypoint.GBmmp3u4.mjs",
+      "src/app/@pageName/(root).page.tsx",
+      "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+      "_page.B0ArZ7kE.mjs",
+      "_ArticleCard.Dm0xI500.mjs",
+      "_LatestArticleList.d7kz2F5q.mjs",
+      "_PopularArticleList.DFyn7Y9y.mjs",
+      "_createLucideIcon.2Mv_0cer.mjs"
+    ],
+    "dynamicImports": [
+      "src/app/(root).layout.tsx"
+    ]
+  },
+  "virtual:__react_server_router_page__/ConvexClientProvider::/Users/torimototaishi/programming/tech-article-app/src/app/ConvexClientProvider.tsx::.jsx": {
+    "file": "server/ConvexClientProvider.tsx__.Cx2hMJp1.mjs",
+    "name": "ConvexClientProvider.tsx__",
+    "src": "virtual:__react_server_router_page__/ConvexClientProvider::/Users/torimototaishi/programming/tech-article-app/src/app/ConvexClientProvider.tsx::.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs",
+      "_entrypoint.GBmmp3u4.mjs",
+      "src/app/@pageName/(root).page.tsx",
+      "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+      "_ConvexClientProvider.D-WBEdfF.mjs"
+    ],
+    "dynamicImports": [
+      "src/app/(root).layout.tsx"
+    ]
+  },
+  "virtual:__react_server_router_page__/articles/[id]::/Users/torimototaishi/programming/tech-article-app/src/app/articles/[id]/page.tsx::.jsx": {
+    "file": "server/page.tsx__.C1A9cG7m.mjs",
+    "name": "page.tsx__",
+    "src": "virtual:__react_server_router_page__/articles/[id]::/Users/torimototaishi/programming/tech-article-app/src/app/articles/[id]/page.tsx::.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs",
+      "_entrypoint.GBmmp3u4.mjs",
+      "src/app/@pageName/(root).page.tsx",
+      "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+      "_page.CJuumVtk.mjs"
+    ],
+    "dynamicImports": [
+      "src/app/(root).layout.tsx"
+    ]
+  },
+  "virtual:__react_server_router_page__/blogs::/Users/torimototaishi/programming/tech-article-app/src/app/blogs/page.tsx::.jsx": {
+    "file": "server/page.tsx__.DtIHSNlM.mjs",
+    "name": "page.tsx__",
+    "src": "virtual:__react_server_router_page__/blogs::/Users/torimototaishi/programming/tech-article-app/src/app/blogs/page.tsx::.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs",
+      "_entrypoint.GBmmp3u4.mjs",
+      "src/app/@pageName/(root).page.tsx",
+      "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+      "_page.BQBxNRX-.mjs"
+    ],
+    "dynamicImports": [
+      "src/app/(root).layout.tsx"
+    ]
+  },
+  "virtual:__react_server_router_page__/editor::/Users/torimototaishi/programming/tech-article-app/src/app/editor/page.tsx::.jsx": {
+    "file": "server/page.tsx__.oVcuPTzr.mjs",
+    "name": "page.tsx__",
+    "src": "virtual:__react_server_router_page__/editor::/Users/torimototaishi/programming/tech-article-app/src/app/editor/page.tsx::.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs",
+      "_entrypoint.GBmmp3u4.mjs",
+      "src/app/@pageName/(root).page.tsx",
+      "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+      "_page.Dmqq9ymA.mjs"
+    ],
+    "dynamicImports": [
+      "src/app/(root).layout.tsx"
+    ]
+  },
+  "virtual:__react_server_router_page__/popular::/Users/torimototaishi/programming/tech-article-app/src/app/popular/page.tsx::.jsx": {
+    "file": "server/page.tsx__.CVNsWGuj.mjs",
+    "name": "page.tsx__",
+    "src": "virtual:__react_server_router_page__/popular::/Users/torimototaishi/programming/tech-article-app/src/app/popular/page.tsx::.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-server.Bhr5inAZ.mjs",
+      "_entrypoint.GBmmp3u4.mjs",
+      "src/app/@pageName/(root).page.tsx",
+      "src/app/blogs/@pageName/(blogsPageName).page.tsx",
+      "_page.DQunmtvT.mjs",
+      "_ArticleCard.Dm0xI500.mjs",
+      "_PopularArticleList.DFyn7Y9y.mjs",
+      "_createLucideIcon.2Mv_0cer.mjs"
+    ],
+    "dynamicImports": [
+      "src/app/(root).layout.tsx"
+    ]
+  },
+  "virtual:config/prebuilt": {
+    "file": "server/__react_server_config__/prebuilt.mjs",
+    "name": "server/__react_server_config__/prebuilt",
+    "src": "virtual:config/prebuilt",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,1 @@
+import{jsx as r}from"react/jsx-runtime";import{_ as a}from"./src/components/ArticleCard.Dm0xI500.mjs";const d=s=>{const{articles:i}=s;return r("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",children:i.map((l,o)=>r("span",{children:r(a,{article:l})},o))})};export{d as P};

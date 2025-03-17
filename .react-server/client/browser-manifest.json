@@ -1,0 +1,211 @@
+{
+  "_client.DQLq28J3.mjs": {
+    "file": "client/react-dom/client.DQLq28J3.mjs",
+    "name": "react-dom/client",
+    "imports": [
+      "_react.BboN7MDb.mjs",
+      "_react-dom.Db1g1cBr.mjs"
+    ]
+  },
+  "_client.browser.CPoWayly.mjs": {
+    "file": "client/react-server-dom-webpack/client.browser.CPoWayly.mjs",
+    "name": "react-server-dom-webpack/client.browser",
+    "imports": [
+      "_react-dom.Db1g1cBr.mjs"
+    ]
+  },
+  "_context.BEW1agim.mjs": {
+    "file": "client/react-server/client/context.BEW1agim.mjs",
+    "name": "react-server/client/context",
+    "imports": [
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "_jsx-runtime.1V7Smtlq.mjs": {
+    "file": "client/jsx-runtime.1V7Smtlq.mjs",
+    "name": "jsx-runtime",
+    "imports": [
+      "_jsx-runtime.CIru4pme.mjs"
+    ]
+  },
+  "_jsx-runtime.CIru4pme.mjs": {
+    "file": "client/react/jsx-runtime.CIru4pme.mjs",
+    "name": "react/jsx-runtime"
+  },
+  "_react-dom.Db1g1cBr.mjs": {
+    "file": "client/react-dom.Db1g1cBr.mjs",
+    "name": "react-dom",
+    "imports": [
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "_react.BboN7MDb.mjs": {
+    "file": "client/react.BboN7MDb.mjs",
+    "name": "react"
+  },
+  "_use_queries.CUjWGY7a.mjs": {
+    "file": "client/use_queries.CUjWGY7a.mjs",
+    "name": "use_queries",
+    "imports": [
+      "_context.BEW1agim.mjs",
+      "_react.BboN7MDb.mjs",
+      "_react-dom.Db1g1cBr.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/ErrorBoundary.jsx": {
+    "file": "client/@lazarv/react-server/client/ErrorBoundary.CYvi417I.mjs",
+    "name": "client/@lazarv/react-server/client/ErrorBoundary",
+    "src": "node_modules/@lazarv/react-server/client/ErrorBoundary.jsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_context.BEW1agim.mjs",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/Form.jsx": {
+    "file": "client/@lazarv/react-server/client/Form.d_PfAbax.mjs",
+    "name": "client/@lazarv/react-server/client/Form",
+    "src": "node_modules/@lazarv/react-server/client/Form.jsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_context.BEW1agim.mjs",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/Link.jsx": {
+    "file": "client/@lazarv/react-server/client/Link.BzbADcO-.mjs",
+    "name": "client/@lazarv/react-server/client/Link",
+    "src": "node_modules/@lazarv/react-server/client/Link.jsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_context.BEW1agim.mjs",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/ReactServerComponent.jsx": {
+    "file": "client/@lazarv/react-server/client/ReactServerComponent.CfX4jFWE.mjs",
+    "name": "client/@lazarv/react-server/client/ReactServerComponent",
+    "src": "node_modules/@lazarv/react-server/client/ReactServerComponent.jsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_context.BEW1agim.mjs",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/Refresh.jsx": {
+    "file": "client/@lazarv/react-server/client/Refresh.DqDRBMHO.mjs",
+    "name": "client/@lazarv/react-server/client/Refresh",
+    "src": "node_modules/@lazarv/react-server/client/Refresh.jsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_context.BEW1agim.mjs",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/context.mjs": {
+    "file": "client/@lazarv/react-server/client/context.DW43tTOM.mjs",
+    "name": "client/@lazarv/react-server/client/context",
+    "src": "node_modules/@lazarv/react-server/client/context.mjs",
+    "isEntry": true,
+    "imports": [
+      "_context.BEW1agim.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/entry.client.jsx": {
+    "file": "client/index.CgPQ9_8w.mjs",
+    "name": "client/index",
+    "src": "node_modules/@lazarv/react-server/client/entry.client.jsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_context.BEW1agim.mjs",
+      "_client.DQLq28J3.mjs",
+      "_client.browser.CPoWayly.mjs",
+      "node_modules/@lazarv/react-server/client/ReactServerComponent.jsx",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_react.BboN7MDb.mjs",
+      "_react-dom.Db1g1cBr.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/location.mjs": {
+    "file": "client/@lazarv/react-server/client/location.D5U2SRFJ.mjs",
+    "name": "client/@lazarv/react-server/client/location",
+    "src": "node_modules/@lazarv/react-server/client/location.mjs",
+    "isEntry": true,
+    "imports": [
+      "_context.BEW1agim.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "node_modules/@lazarv/react-server/client/navigation.jsx": {
+    "file": "client/@lazarv/react-server/client/navigation.BDaLcac5.mjs",
+    "name": "client/@lazarv/react-server/client/navigation",
+    "src": "node_modules/@lazarv/react-server/client/navigation.jsx",
+    "isEntry": true,
+    "imports": [
+      "node_modules/@lazarv/react-server/client/Form.jsx",
+      "node_modules/@lazarv/react-server/client/Link.jsx",
+      "node_modules/@lazarv/react-server/client/ReactServerComponent.jsx",
+      "node_modules/@lazarv/react-server/client/Refresh.jsx",
+      "node_modules/@lazarv/react-server/client/location.mjs",
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_context.BEW1agim.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "src/app/ConvexClientProvider.tsx": {
+    "file": "client/src/app/ConvexClientProvider.O9LqKO23.mjs",
+    "name": "client/src/app/ConvexClientProvider",
+    "src": "src/app/ConvexClientProvider.tsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_use_queries.CUjWGY7a.mjs",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_context.BEW1agim.mjs",
+      "_react.BboN7MDb.mjs",
+      "_react-dom.Db1g1cBr.mjs"
+    ]
+  },
+  "src/components/ArticleCard.tsx": {
+    "file": "client/src/components/ArticleCard.6-tVSiG5.mjs",
+    "name": "client/src/components/ArticleCard",
+    "src": "src/components/ArticleCard.tsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "node_modules/@lazarv/react-server/client/Link.jsx",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_context.BEW1agim.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
+  },
+  "src/components/LatestArticleList.tsx": {
+    "file": "client/src/components/LatestArticleList.BXzF0iRg.mjs",
+    "name": "client/src/components/LatestArticleList",
+    "src": "src/components/LatestArticleList.tsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime.1V7Smtlq.mjs",
+      "_use_queries.CUjWGY7a.mjs",
+      "src/components/ArticleCard.tsx",
+      "_context.BEW1agim.mjs",
+      "_jsx-runtime.CIru4pme.mjs",
+      "_react.BboN7MDb.mjs",
+      "_react-dom.Db1g1cBr.mjs",
+      "node_modules/@lazarv/react-server/client/Link.jsx"
+    ]
+  }
+}

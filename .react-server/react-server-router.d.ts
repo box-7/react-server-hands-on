@@ -26,9 +26,9 @@ declare namespace __react_server_routing__ {
   type OptionalCatchAllSlug<S extends string> =
     S extends `${string}${SearchOrHash}` ? never : S;
 
-  type StaticRoutes = "/README" | "/convex/articles" | "/convex/README" | "/convex/schema" | "/src/app" | "/src/vite-env" | "/convex/_generated/api" | "/convex/_generated/dataModel" | "/convex/_generated/server" | "/src/app/blogs" | "/src/app/ConvexClientProvider" | "/src/app/editor" | "/src/app/popular" | "/src/components/ArticleCard" | "/src/components/Footer" | "/src/components/Header" | "/src/components/LatestArticleList" | "/src/components/PopularArticleList" | "/src/domain/Article";
+  type StaticRoutes = "/" | "/blogs" | "/ConvexClientProvider" | "/editor" | "/popular";
   type DynamicRoutes<T0 extends string> =
-    | `/src/app/articles/${SafeSlug<T0>}`;
+    | `/articles/${SafeSlug<T0>}`;
 
   type RouteImpl<T> =
     | StaticRoutes
