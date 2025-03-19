@@ -20,6 +20,14 @@ export default async function GetPopular(request: Request) {
     ? Number(url.searchParams.get("limit"))
     : 20;
 
+
+        // 環境変数のチェック
+        const convexUrl = process.env.CONVEX_URL || import.meta.env.VITE_CONVEX_URL;
+        if (!convexUrl) {
+          throw new Error("Convex URL is not defined");
+        }
+
+        
   // client.query を使用して、api.articles.getPopular クエリを実行し、人気の記事を取得
   // limit パラメータをクエリに渡して、取得する記事の数を制限
   // await を使用して、非同期クエリの結果を待つ

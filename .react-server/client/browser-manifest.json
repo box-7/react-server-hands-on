@@ -2,22 +2,31 @@
   "_client.DQLq28J3.mjs": {
     "file": "client/react-dom/client.DQLq28J3.mjs",
     "name": "react-dom/client",
-    "imports": ["_react.BboN7MDb.mjs", "_react-dom.Db1g1cBr.mjs"]
+    "imports": [
+      "_react.BboN7MDb.mjs",
+      "_react-dom.Db1g1cBr.mjs"
+    ]
   },
   "_client.browser.CPoWayly.mjs": {
     "file": "client/react-server-dom-webpack/client.browser.CPoWayly.mjs",
     "name": "react-server-dom-webpack/client.browser",
-    "imports": ["_react-dom.Db1g1cBr.mjs"]
+    "imports": [
+      "_react-dom.Db1g1cBr.mjs"
+    ]
   },
   "_context.BEW1agim.mjs": {
     "file": "client/react-server/client/context.BEW1agim.mjs",
     "name": "react-server/client/context",
-    "imports": ["_react.BboN7MDb.mjs"]
+    "imports": [
+      "_react.BboN7MDb.mjs"
+    ]
   },
   "_jsx-runtime.1V7Smtlq.mjs": {
     "file": "client/jsx-runtime.1V7Smtlq.mjs",
     "name": "jsx-runtime",
-    "imports": ["_jsx-runtime.CIru4pme.mjs"]
+    "imports": [
+      "_jsx-runtime.CIru4pme.mjs"
+    ]
   },
   "_jsx-runtime.CIru4pme.mjs": {
     "file": "client/react/jsx-runtime.CIru4pme.mjs",
@@ -26,7 +35,9 @@
   "_react-dom.Db1g1cBr.mjs": {
     "file": "client/react-dom.Db1g1cBr.mjs",
     "name": "react-dom",
-    "imports": ["_react.BboN7MDb.mjs"]
+    "imports": [
+      "_react.BboN7MDb.mjs"
+    ]
   },
   "_react.BboN7MDb.mjs": {
     "file": "client/react.BboN7MDb.mjs",
@@ -106,7 +117,10 @@
     "name": "client/@lazarv/react-server/client/context",
     "src": "node_modules/@lazarv/react-server/client/context.mjs",
     "isEntry": true,
-    "imports": ["_context.BEW1agim.mjs", "_react.BboN7MDb.mjs"]
+    "imports": [
+      "_context.BEW1agim.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
   },
   "node_modules/@lazarv/react-server/client/entry.client.jsx": {
     "file": "client/index.CgPQ9_8w.mjs",
@@ -129,7 +143,10 @@
     "name": "client/@lazarv/react-server/client/location",
     "src": "node_modules/@lazarv/react-server/client/location.mjs",
     "isEntry": true,
-    "imports": ["_context.BEW1agim.mjs", "_react.BboN7MDb.mjs"]
+    "imports": [
+      "_context.BEW1agim.mjs",
+      "_react.BboN7MDb.mjs"
+    ]
   },
   "node_modules/@lazarv/react-server/client/navigation.jsx": {
     "file": "client/@lazarv/react-server/client/navigation.BDaLcac5.mjs",

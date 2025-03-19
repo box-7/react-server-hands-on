@@ -61,6 +61,10 @@ export default async function Home() {
               Popular Articles
             </h2>
           </div>
+
+
+
+
           <Link
             to="/popular"
             className="inline-flex items-center text-teal-600 hover:text-teal-700"
@@ -68,6 +72,9 @@ export default async function Home() {
             View all
             <ArrowRight className="w-5 h-5 ml-1" />
           </Link>
+
+
+          
         </div>
 
         {/* PopularArticleListを呼び出し */}

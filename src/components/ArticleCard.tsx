@@ -5,7 +5,7 @@ import { Link } from "@lazarv/react-server/navigation";
 import { Article } from "../domain/Article";
 
 type Props = {
-  article: Article; // import { Article } from "../domain/Article";
+  article: Article;
 };
 
 export const truncateText = (text: string, maxLength: number) => {

@@ -26,20 +26,18 @@ declare namespace __react_server_routing__ {
   type OptionalCatchAllSlug<S extends string> =
     S extends `${string}${SearchOrHash}` ? never : S;
 
-  type StaticRoutes =
-    | "/"
-    | "/blogs"
-    | "/ConvexClientProvider"
-    | "/editor"
-    | "/popular";
-  type DynamicRoutes<T0 extends string> = `/articles/${SafeSlug<T0>}`;
+  type StaticRoutes = "/" | "/blogs" | "/ConvexClientProvider" | "/editor" | "/popular";
+  type DynamicRoutes<T0 extends string> =
+    | `/articles/${SafeSlug<T0>}`;
 
   type RouteImpl<T> =
     | StaticRoutes
     | SearchOrHash
     | (T extends WithProtocol<infer _> ? T : never)
     | `${StaticRoutes}${SearchOrHash}`
-    | (T extends `${DynamicRoutes<infer _>}${Suffix}` ? T : never);
+    | (T extends `${DynamicRoutes<infer _>}${Suffix}`
+        ? T
+        : never);
 
   type Param<P, R> = P extends `[[...${infer K}]]`
     ? { [key in K]?: string[] }
@@ -48,14 +46,16 @@ declare namespace __react_server_routing__ {
       : P extends `[[${infer K}]]`
         ? { [key in K]?: string } & R
         : P extends `[${infer K}]`
-          ? { [key in K]: string } & R
-          : R;
+            ? { [key in K]: string } & R
+            : R;
   type ExtractParams<T> = T extends `${infer P}/${infer R}`
     ? Param<P, ExtractParams<R>>
     : Param<T, unknown>;
   type RouteParams<T> = T extends StaticRoutes
     ? boolean
-    : T extends DynamicRoutes<infer _>
+    : T extends DynamicRoutes<
+          infer _
+        >
       ? ExtractParams<T>
       : never;
 
@@ -94,7 +94,7 @@ declare module "@lazarv/react-server/navigation" {
    * ```
    */
   export function Link<T>(
-    props: LinkProps<__react_server_routing__.RouteImpl<T>>,
+    props: LinkProps<__react_server_routing__.RouteImpl<T>>
   ): JSX.Element;
 
   export type RefreshProps = Omit<OriginalRefreshProps, "target"> & {
@@ -137,7 +137,7 @@ declare module "@lazarv/react-server/navigation" {
    * @property children - The children to render
    */
   export function ReactServerComponent(
-    props: ReactServerComponentProps,
+    props: ReactServerComponentProps
   ): JSX.Element;
 
   /**
@@ -147,7 +147,7 @@ declare module "@lazarv/react-server/navigation" {
    * @returns The current location
    */
   export function useLocation(
-    outlet?: __react_server_routing__.Outlet,
+    outlet?: __react_server_routing__.Outlet
   ): Location | null;
 
   /**
@@ -157,7 +157,7 @@ declare module "@lazarv/react-server/navigation" {
    * @returns The current search parameters
    */
   export function useSearchParams(
-    outlet?: __react_server_routing__.Outlet,
+    outlet?: __react_server_routing__.Outlet
   ): URLSearchParams | null;
 
   /**
@@ -167,7 +167,7 @@ declare module "@lazarv/react-server/navigation" {
    * @returns The current pathname
    */
   export function usePathname(
-    outlet?: __react_server_routing__.Outlet,
+    outlet?: __react_server_routing__.Outlet
   ): string | null;
 }
 
@@ -203,7 +203,7 @@ declare module "@lazarv/react-server/client" {
             }) => Promise<boolean> | boolean);
         fallback?: React.ReactNode;
         Component?: React.ReactNode;
-      },
+      }
     ): Promise<void>;
     replace<T extends string>(
       url: __react_server_routing__.RouteImpl<T>,
@@ -220,11 +220,11 @@ declare module "@lazarv/react-server/client" {
             }) => Promise<boolean> | boolean);
         fallback?: React.ReactNode;
         Component?: React.ReactNode;
-      },
+      }
     ): Promise<void>;
     prefetch<T extends string>(
       url: __react_server_routing__.RouteImpl<T>,
-      options?: { outlet?: __react_server_routing__.Outlet; ttl?: number },
+      options?: { outlet?: __react_server_routing__.Outlet; ttl?: number }
     ): Promise<void>;
     abort(outlet?: __react_server_routing__.Outlet, reason?: Error): void;
   };
@@ -262,6 +262,6 @@ declare module "@lazarv/react-server/router" {
    */
   export function useMatch<T>(
     path: __react_server_routing__.RouteImpl<T>,
-    options?: MatchOptions,
+    options?: MatchOptions
   ): __react_server_routing__.RouteParams<T> | null;
 }
