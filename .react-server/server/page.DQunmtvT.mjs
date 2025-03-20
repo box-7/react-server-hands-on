@@ -1,6 +1,0 @@
-import{jsxs as r,jsx as e}from"react/jsx-runtime";import{L as a}from"./src/components/ArticleCard.Dm0xI500.mjs";import{P as o}from"./PopularArticleList.DFyn7Y9y.mjs";import{Suspense as s}from"react";import{c}from"./createLucideIcon.2Mv_0cer.mjs";/**
- * @license lucide-react v0.479.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const l=[["path",{d:"m12 19-7-7 7-7",key:"1l729n"}],["path",{d:"M19 12H5",key:"x3x0zl"}]],i=c("ArrowLeft",l),n=async()=>await(await fetch("http://localhost:3000/api/articles/popular?limit=50")).json();async function m(){const t=await n();return t?r("div",{className:"container mx-auto px-4 py-8",children:[e("div",{className:"flex justify-between items-center mb-6",children:r(a,{to:"/",className:"flex items-center text-gray-600 hover:text-gray-900",children:[e(i,{className:"w-5 h-5 mr-2"}),"Back to Home"]})}),r("div",{className:"mb-12",children:[e("h1",{className:"text-3xl font-bold text-gray-900 mb-8",children:"Popular Articles"}),e(s,{fallback:e("div",{children:"Loading..."}),children:e(o,{articles:t})})]})]}):null}const _=Object.freeze(Object.defineProperty({__proto__:null,default:m},Symbol.toStringTag,{value:"Module"}));export{_};

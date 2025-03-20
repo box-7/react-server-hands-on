@@ -23,11 +23,11 @@
     "file": "server/createLucideIcon.2Mv_0cer.mjs",
     "name": "createLucideIcon"
   },
-  "_entrypoint.C3aP9BO4.mjs": {
-    "file": "server/entrypoint.C3aP9BO4.mjs",
+  "_entrypoint.C6UUvsC8.mjs": {
+    "file": "server/entrypoint.C6UUvsC8.mjs",
     "name": "entrypoint",
     "imports": [
-      "_react-server.Bhr5inAZ.mjs"
+      "_react-server.CYwTf2yq.mjs"
     ],
     "dynamicImports": [
       "src/app/api/articles/GET.popular.server.ts",
@@ -47,7 +47,7 @@
       "virtual:__react_server_router_page__/editor::/Users/torimototaishi/programming/tech-article-app/src/app/editor/page.tsx::.jsx",
       "_page.Dmqq9ymA.mjs",
       "virtual:__react_server_router_page__/popular::/Users/torimototaishi/programming/tech-article-app/src/app/popular/page.tsx::.jsx",
-      "_page.DQunmtvT.mjs",
+      "src/app/popular/page.tsx",
       "virtual:__react_server_router_page__/articles/[id]::/Users/torimototaishi/programming/tech-article-app/src/app/articles/[id]/page.tsx::.jsx",
       "_page.CJuumVtk.mjs"
     ]
@@ -73,23 +73,24 @@
     "name": "page",
     "isDynamicEntry": true
   },
-  "_page.DQunmtvT.mjs": {
-    "file": "server/page.DQunmtvT.mjs",
-    "name": "page",
-    "isDynamicEntry": true,
-    "imports": [
-      "_ArticleCard.Dm0xI500.mjs",
-      "_PopularArticleList.DFyn7Y9y.mjs",
-      "_createLucideIcon.2Mv_0cer.mjs"
-    ]
-  },
   "_page.Dmqq9ymA.mjs": {
     "file": "server/page.Dmqq9ymA.mjs",
     "name": "page",
     "isDynamicEntry": true
   },
-  "_react-server.Bhr5inAZ.mjs": {
-    "file": "server/@lazarv/react-server.Bhr5inAZ.mjs",
+  "_page.VH1N0oMU.mjs": {
+    "file": "server/page.VH1N0oMU.mjs",
+    "name": "page",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-server.CYwTf2yq.mjs",
+      "_ArticleCard.Dm0xI500.mjs",
+      "_PopularArticleList.DFyn7Y9y.mjs",
+      "_createLucideIcon.2Mv_0cer.mjs"
+    ]
+  },
+  "_react-server.CYwTf2yq.mjs": {
+    "file": "server/@lazarv/react-server.CYwTf2yq.mjs",
     "name": "@lazarv/react-server"
   },
   "node_modules/@lazarv/react-server/lib/plugins/file-router/entrypoint.jsx": {
@@ -98,8 +99,8 @@
     "src": "node_modules/@lazarv/react-server/lib/plugins/file-router/entrypoint.jsx",
     "isEntry": true,
     "imports": [
-      "_entrypoint.C3aP9BO4.mjs",
-      "_react-server.Bhr5inAZ.mjs"
+      "_entrypoint.C6UUvsC8.mjs",
+      "_react-server.CYwTf2yq.mjs"
     ]
   },
   "node_modules/@lazarv/react-server/server/GlobalError.jsx": {
@@ -108,7 +109,7 @@
     "src": "node_modules/@lazarv/react-server/server/GlobalError.jsx",
     "isEntry": true,
     "imports": [
-      "_react-server.Bhr5inAZ.mjs"
+      "_react-server.CYwTf2yq.mjs"
     ]
   },
   "node_modules/@lazarv/react-server/server/render-rsc.jsx": {
@@ -117,11 +118,11 @@
     "src": "node_modules/@lazarv/react-server/server/render-rsc.jsx",
     "isEntry": true,
     "imports": [
-      "_react-server.Bhr5inAZ.mjs"
+      "_react-server.CYwTf2yq.mjs"
     ]
   },
   "src/app/(root).layout.tsx": {
-    "file": "server/(root).layout.D5hdoUuG.mjs",
+    "file": "server/(root).layout.DBvP7Rg3.mjs",
     "name": "(root).layout",
     "src": "src/app/(root).layout.tsx",
     "isDynamicEntry": true,
@@ -131,7 +132,7 @@
       "_ConvexClientProvider.D-WBEdfF.mjs"
     ],
     "css": [
-      "assets/(root)-BJv5YsUO.css"
+      "assets/(root)-ldkedoL7.css"
     ]
   },
   "src/app/@pageName/(root).page.tsx": {
@@ -161,14 +162,27 @@
     "src": "src/app/blogs/@pageName/(blogsPageName).page.tsx",
     "isDynamicEntry": true
   },
+  "src/app/popular/page.tsx": {
+    "file": "server/src/app/popular/page.uD7fXWOq.mjs",
+    "name": "src/app/popular/page",
+    "src": "src/app/popular/page.tsx",
+    "isEntry": true,
+    "imports": [
+      "_react-server.CYwTf2yq.mjs",
+      "_ArticleCard.Dm0xI500.mjs",
+      "_PopularArticleList.DFyn7Y9y.mjs",
+      "_page.VH1N0oMU.mjs",
+      "_createLucideIcon.2Mv_0cer.mjs"
+    ]
+  },
   "virtual:__react_server_router_page__/::/Users/torimototaishi/programming/tech-article-app/src/app/page.tsx::.jsx": {
-    "file": "server/page.tsx__.EoH6GJwu.mjs",
+    "file": "server/page.tsx__.CdYoEmuy.mjs",
     "name": "page.tsx__",
     "src": "virtual:__react_server_router_page__/::/Users/torimototaishi/programming/tech-article-app/src/app/page.tsx::.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_react-server.Bhr5inAZ.mjs",
-      "_entrypoint.C3aP9BO4.mjs",
+      "_react-server.CYwTf2yq.mjs",
+      "_entrypoint.C6UUvsC8.mjs",
       "src/app/@pageName/(root).page.tsx",
       "src/app/blogs/@pageName/(blogsPageName).page.tsx",
       "_page.B0ArZ7kE.mjs",
@@ -182,13 +196,13 @@
     ]
   },
   "virtual:__react_server_router_page__/ConvexClientProvider::/Users/torimototaishi/programming/tech-article-app/src/app/ConvexClientProvider.tsx::.jsx": {
-    "file": "server/ConvexClientProvider.tsx__.BDfbOJNP.mjs",
+    "file": "server/ConvexClientProvider.tsx__.CGMcyNsa.mjs",
     "name": "ConvexClientProvider.tsx__",
     "src": "virtual:__react_server_router_page__/ConvexClientProvider::/Users/torimototaishi/programming/tech-article-app/src/app/ConvexClientProvider.tsx::.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_react-server.Bhr5inAZ.mjs",
-      "_entrypoint.C3aP9BO4.mjs",
+      "_react-server.CYwTf2yq.mjs",
+      "_entrypoint.C6UUvsC8.mjs",
       "src/app/@pageName/(root).page.tsx",
       "src/app/blogs/@pageName/(blogsPageName).page.tsx",
       "_ConvexClientProvider.D-WBEdfF.mjs"
@@ -198,13 +212,13 @@
     ]
   },
   "virtual:__react_server_router_page__/articles/[id]::/Users/torimototaishi/programming/tech-article-app/src/app/articles/[id]/page.tsx::.jsx": {
-    "file": "server/page.tsx__.CAm6_nIG.mjs",
+    "file": "server/page.tsx__.CN9TrWUT.mjs",
     "name": "page.tsx__",
     "src": "virtual:__react_server_router_page__/articles/[id]::/Users/torimototaishi/programming/tech-article-app/src/app/articles/[id]/page.tsx::.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_react-server.Bhr5inAZ.mjs",
-      "_entrypoint.C3aP9BO4.mjs",
+      "_react-server.CYwTf2yq.mjs",
+      "_entrypoint.C6UUvsC8.mjs",
       "src/app/@pageName/(root).page.tsx",
       "src/app/blogs/@pageName/(blogsPageName).page.tsx",
       "_page.CJuumVtk.mjs"
@@ -214,13 +228,13 @@
     ]
   },
   "virtual:__react_server_router_page__/blogs::/Users/torimototaishi/programming/tech-article-app/src/app/blogs/page.tsx::.jsx": {
-    "file": "server/page.tsx__.MGkwfNDR.mjs",
+    "file": "server/page.tsx__.DMaZD2LO.mjs",
     "name": "page.tsx__",
     "src": "virtual:__react_server_router_page__/blogs::/Users/torimototaishi/programming/tech-article-app/src/app/blogs/page.tsx::.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_react-server.Bhr5inAZ.mjs",
-      "_entrypoint.C3aP9BO4.mjs",
+      "_react-server.CYwTf2yq.mjs",
+      "_entrypoint.C6UUvsC8.mjs",
       "src/app/@pageName/(root).page.tsx",
       "src/app/blogs/@pageName/(blogsPageName).page.tsx",
       "_page.BQBxNRX-.mjs"
@@ -230,13 +244,13 @@
     ]
   },
   "virtual:__react_server_router_page__/editor::/Users/torimototaishi/programming/tech-article-app/src/app/editor/page.tsx::.jsx": {
-    "file": "server/page.tsx__.Ba7sCYI2.mjs",
+    "file": "server/page.tsx__.6zzer6TQ.mjs",
     "name": "page.tsx__",
     "src": "virtual:__react_server_router_page__/editor::/Users/torimototaishi/programming/tech-article-app/src/app/editor/page.tsx::.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_react-server.Bhr5inAZ.mjs",
-      "_entrypoint.C3aP9BO4.mjs",
+      "_react-server.CYwTf2yq.mjs",
+      "_entrypoint.C6UUvsC8.mjs",
       "src/app/@pageName/(root).page.tsx",
       "src/app/blogs/@pageName/(blogsPageName).page.tsx",
       "_page.Dmqq9ymA.mjs"
@@ -246,16 +260,16 @@
     ]
   },
   "virtual:__react_server_router_page__/popular::/Users/torimototaishi/programming/tech-article-app/src/app/popular/page.tsx::.jsx": {
-    "file": "server/page.tsx__.BRFaCTyo.mjs",
+    "file": "server/page.tsx__.BvngY5jr.mjs",
     "name": "page.tsx__",
     "src": "virtual:__react_server_router_page__/popular::/Users/torimototaishi/programming/tech-article-app/src/app/popular/page.tsx::.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_react-server.Bhr5inAZ.mjs",
-      "_entrypoint.C3aP9BO4.mjs",
+      "_react-server.CYwTf2yq.mjs",
+      "_entrypoint.C6UUvsC8.mjs",
       "src/app/@pageName/(root).page.tsx",
       "src/app/blogs/@pageName/(blogsPageName).page.tsx",
-      "_page.DQunmtvT.mjs",
+      "_page.VH1N0oMU.mjs",
       "_ArticleCard.Dm0xI500.mjs",
       "_PopularArticleList.DFyn7Y9y.mjs",
       "_createLucideIcon.2Mv_0cer.mjs"
