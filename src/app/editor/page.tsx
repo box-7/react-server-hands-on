@@ -14,6 +14,8 @@ import { MDEditorComponent } from "../../components/MDEditorComponent";
 
 export default function Editor() {
         // Convex関数を呼ぶためにuseMutationを使う
+        // クライアントサイドレンダリング (CSR) の一部として使用される
+        // CSRなので、api.articles.insertを直接叩く(GET.blogsserver.tsのようにサーバーサイドで実行されるわけではない)
         const insertArticle = useMutation(api.articles.insert);
         // 内容(MDEditorの値)はコンポーネントが違うためformDataから取得できないのでステートで管理
         const [content, setContent] = useState("");

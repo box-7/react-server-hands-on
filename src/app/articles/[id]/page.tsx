@@ -4,6 +4,7 @@ import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 import { Id } from "../../../../convex/_generated/dataModel";
 import { useEffect, useState } from "react";
+// マークダウンを利用するためのライブラリ
 import type MDEditorType from "@uiw/react-md-editor";
 
 export default function ArticlePage({ id }: { id: string }) {
@@ -28,6 +29,8 @@ export default function ArticlePage({ id }: { id: string }) {
                         </div>
                 );
         }
+
+        // console.log("mde", MDEditor);
 
         return (
                 <div className="max-w-3xl mx-auto px-4 py-8">
