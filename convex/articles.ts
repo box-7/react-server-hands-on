@@ -145,7 +145,7 @@ export const incrementViewCount = mutation({
                 if (!article) {
                         throw new Error("Article not found");
                 }
-
+                // patch メソッドは、指定されたフィールド（この場合は viewCount）を更新するために使用される
                 await ctx.db.patch(article._id, {
                         viewCount: article.viewCount + 1,
                 });

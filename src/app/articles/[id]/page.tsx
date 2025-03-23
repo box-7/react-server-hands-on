@@ -9,12 +9,16 @@ import type MDEditorType from "@uiw/react-md-editor";
 
 export default function ArticlePage({ id }: { id: string }) {
         const article = useQuery(api.articles.getById, {
+                // ConvexのTypeScript型で、特定のテーブル（この場合は "articles"）のドキュメントIDを表す
                 id: id as Id<"articles">,
         });
         const incrementViewCount = useMutation(api.articles.incrementViewCount);
         const [MDEditor, setMDEditor] = useState<typeof MDEditorType | null>(null);
 
         useEffect(() => {
+                // 動的インポートという方法でライブラリをインポート
+                // MDEditorがクライアントサイドでインポートしないとエラーになるため、動的インポートを使用
+                // 完全にクライアントサイドのときのみにインポートする
                 import("@uiw/react-md-editor").then((mod) => {
                         setMDEditor(mod.default);
                 });
