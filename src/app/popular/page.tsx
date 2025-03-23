@@ -15,6 +15,7 @@ type ArticleJson = {
 const getArticles = async () => {
         "use cache; ttl=20; tags=articles";
         const response = await fetch("http://localhost:3000/api/articles/popular?limit=50");
+        console.log("getArticles通過確認");
         const data = await response.json();
         return data;
 };
@@ -22,7 +23,9 @@ const getArticles = async () => {
 // リフレッシュボタンを押した時の挙動
 const refreshArticles = async () => {
         // use server は、サーバーサイドでのみ実行されることを示す
+        // npm run start でサーバーを起動している場合、サーバーサイドでのみ実行される
         "use server";
+        // invalidate 関数は、キャッシュを手動で無効化するために使用
         invalidate(getArticles);
 };
 

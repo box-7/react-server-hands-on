@@ -20,9 +20,11 @@ const getArticles = async () => {
 };
 
 // リフレッシュボタンを押した時の挙動
-const refreshArticles = async () => {
+const refreshArticles2 = async () => {
         // use server は、サーバーサイドでのみ実行されることを示す
+        // npm run start でサーバーを起動している場合、サーバーサイドでのみ実行される
         "use server";
+        // invalidate 関数は、キャッシュを手動で無効化するために使用
         invalidate(getArticles);
 };
 
@@ -46,7 +48,7 @@ export default async function Popular() {
                                         // @ts-expect-error Server Actions are not yet supported in types
                                         action={async () => {
                                                 "use server";
-                                                await refreshArticles();
+                                                await refreshArticles2();
                                         }}
                                 >
                                         <button
