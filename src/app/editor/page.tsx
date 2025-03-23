@@ -4,8 +4,11 @@
 "use client";
 
 import { useState } from "react";
+// useMutation: ConvexのReactフックで、データベースのミューテーション（変更）を行うために使用
 import { useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
+// React Serverのクライアント設定を行うためのフック
+// React Serverのクライアントインスタンスを取得し、サーバーとの通信を行う
 import { useClient } from "@lazarv/react-server/client";
 import { MDEditorComponent } from "../../components/MDEditorComponent";
 
@@ -16,6 +19,7 @@ export default function Editor() {
         const [content, setContent] = useState("");
         const { navigate } = useClient();
 
+        // formData は、ウェブフォームから送信されたデータを表すオブジェクト
         const handleAddArticle = async (formData: FormData) => {
                 const title = formData.get("title") as string;
                 await insertArticle({
