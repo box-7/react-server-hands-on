@@ -72,10 +72,21 @@ export default async function Home() {
 
                         {/* Latest Articles */}
                         <div className="mb-12">
-                                <div className="flex items-center mb-8">
-                                        <Clock size={24} className="text-gray-600 mr-2" />
-                                        <h2 className="text-2xl font-bold text-gray-900">Latest Articles</h2>
+                                {/* <div className="flex items-center mb-8"> */}
+                                <div className="flex items-center justify-between mb-8">
+                                        <div className="flex items-center">
+                                                <Clock size={24} className="text-gray-600 mr-2" />
+                                                <h2 className="text-2xl font-bold text-gray-900">Latest Articles</h2>
+                                        </div>
+                                        <Link
+                                                        to="/blogs"
+                                                        className="inline-flex items-center text-teal-600 hover:text-teal-700"
+                                                >
+                                                View all
+                                                <ArrowRight className="w-5 h-5 ml-1" />
+                                        </Link>
                                 </div>
+
                                 <LatestArticleList />
                         </div>
 

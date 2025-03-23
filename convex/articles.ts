@@ -1,4 +1,5 @@
 // Convexと記事データをやり取りするファイル
+// このファイルの内容が、ConvexのAPIエンドポイントとして公開される(コンソールで確認できる)
 
 //  v オブジェクト
 // 引数やデータのバリデーションを行うためのさまざまなユーティリティ関数を提供
@@ -49,6 +50,38 @@ export const getPopular = query({
                 const sortedArticles = articles
                         //       .sort((a, b) => b.viewCount - a.viewCount)
                         .sort((a, b) => (b.viewCount ?? 0) - (a.viewCount ?? 0))
+                        // limit がある場合、その値を使用して配列の最初から limit の位置までの要素を抽出
+                        // limit がない場合（null または undefined の場合）、デフォルトで最初から10個の要素を抽出
+                        .slice(0, limit ?? 10);
+                return sortedArticles.map((article) => {
+                        return {
+                                id: article._id,
+                                title: article.title,
+                                description: article.description,
+                                author: article.author,
+                                createdAt: article._creationTime,
+                                viewCount: article.viewCount,
+                        };
+                });
+        },
+});
+
+export const getBlogs = query({
+        // get クエリはオプションの limit 引数を受け取る
+        // limit 引数が提供された場合、その値を使用して取得する記事の数を制限
+        // 提供されない場合は、すべての記事を取得
+        args: {
+                // limit 引数がオプションであり、数値型であることを指定
+                limit: v.optional(v.number()),
+        },
+        handler: async (ctx, args) => {
+                const { limit } = args;
+                const articles = await ctx.db.query("articles").collect();
+
+                const sortedArticles = articles
+                        // .sort((a, b) => b.viewCount - a.viewCount)
+                        // .sort((a, b) => (b.viewCount ?? 0) - (a.viewCount ?? 0))
+                        .sort((a, b) => b._creationTime - a._creationTime) // 新着順にソート
                         // limit がある場合、その値を使用して配列の最初から limit の位置までの要素を抽出
                         // limit がない場合（null または undefined の場合）、デフォルトで最初から10個の要素を抽出
                         .slice(0, limit ?? 10);
