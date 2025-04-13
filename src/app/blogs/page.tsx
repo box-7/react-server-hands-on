@@ -62,7 +62,7 @@ export default async function Popular() {
                         </div>
                         <div className="mb-12">
                                 <h1 className="text-3xl font-bold text-gray-900 mb-8">
-                                        Latest Articles
+                                        Latest Articles(CSR クライアントサイドレンダリング)
                                 </h1>
                                 <PopularArticleList articles={articles} />
                         </div>

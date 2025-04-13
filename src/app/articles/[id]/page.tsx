@@ -39,6 +39,10 @@ export default function ArticlePage({ id }: { id: string }) {
         return (
                 <div className="max-w-3xl mx-auto px-4 py-8">
                         <div className="mb-8">
+                                <h2 className="text-2xl font-bold text-gray-900">
+                                        記事詳細ページ
+                                        (CSR クライアントサイドレンダリング)
+                                </h2>
                                 <h1 className="text-4xl font-bold text-gray-900 mb-4">
                                         {article.title}
                                 </h1>

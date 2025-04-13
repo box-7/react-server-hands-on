@@ -19,32 +19,10 @@ const getArticles = async () => {
                 // src/app/api/articles/GET.popular.server.tsを呼ぶ
                 "http://localhost:3000/api/articles/popular?limit=10",
         );
-// データはない
-// console.log("response777", response);
-
-// // レスポンスのステータスを表示
-// console.log("Status:", response.status);
-
-// // レスポンスのステータステキストを表示
-// console.log("Status Text:", response.statusText);
-
-// // レスポンスのヘッダーを表示
-// console.log("Headers:", response.headers);
-
-// // レスポンスのURLを表示
-// console.log("URL:", response.url);
-
-// // レスポンスの本文を表示（JSON形式に変換する前）　エラーになる
-// const responseText = await response.text();
-// console.log("Response Text:", responseText);
-
-// // レスポンスをjson形式に変換
-// const data2 = JSON.parse(responseText);
-// console.log("Data:", data2);
 
         // レスポンスをjson形式に変換
         const data = await response.json();
-        // console.log("data", data);
+
         return data;
 };
 
@@ -76,7 +54,10 @@ export default async function Home() {
                                 <div className="flex items-center justify-between mb-8">
                                         <div className="flex items-center">
                                                 <Clock size={24} className="text-gray-600 mr-2" />
-                                                <h2 className="text-2xl font-bold text-gray-900">Latest Articles</h2>
+                                                <h2 className="text-2xl font-bold text-gray-900">
+                                                        Latest Articles
+                                                        (CSR クライアントサイドレンダリング)
+                                                </h2>
                                         </div>
                                         <Link
                                                         to="/blogs"
@@ -86,9 +67,10 @@ export default async function Home() {
                                                 <ArrowRight className="w-5 h-5 ml-1" />
                                         </Link>
                                 </div>
-
+                                CSRだとデータ更新されると最新の状態に更新される
                                 <LatestArticleList />
                         </div>
+
 
                         {/* Popular Articles */}
                         <div className="mb-12">
@@ -97,9 +79,10 @@ export default async function Home() {
                                                 <Clock size={24} className="text-gray-600 mr-2" />
                                                 <h2 className="text-2xl font-bold text-gray-900">
                                                         Popular Articles
+                                                        (SSR サーバーサイドレンダリング)
                                                 </h2>
-                                        </div>
 
+                                        </div>
                                         <Link
                                                 to="/popular"
                                                 className="inline-flex items-center text-teal-600 hover:text-teal-700"
@@ -109,6 +92,7 @@ export default async function Home() {
                                         </Link>
                                 </div>
 
+                                SSRだとデータ更新されても最新の状態に更新されない
                                 {/* PopularArticleListを呼び出し */}
                                 {/* articlesがPopularArticleListに渡される popularを呼ばれた時とは異なる */}
                                 <PopularArticleList articles={articles} />

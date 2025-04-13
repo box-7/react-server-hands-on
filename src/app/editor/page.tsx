@@ -35,7 +35,7 @@ export default function Editor() {
 
         return (
                 <div className="max-w-3xl mx-auto px-4 py-8" data-color-mode="light">
-                        <h1 className="text-3xl font-bold mb-8">Create New Article</h1>
+                        <h1 className="text-3xl font-bold mb-8">Create New Article (CSR クライアントサイドレンダリング)</h1>
                         <form
                                 // @ts-expect-error Server Actions are not yet supported in types
                                 action={handleAddArticle}

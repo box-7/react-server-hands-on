@@ -64,9 +64,12 @@ export default async function Popular() {
                         <div className="mb-12">
                                 <h1 className="text-3xl font-bold text-gray-900 mb-8">
                                         Popular Articles
+                                        (ISR  Incremental Static Regeneration)
                                 </h1>
-                                <PopularArticleList articles={articles} />
                         </div>
+                                SSR+SSGのような仕組み <br />
+                                ビルド時にHTMLを生成して、それ以降はアクセスがあるたびにキャッシュ(revalidate)をチェックして期限が切れたら再度新しいHTMLをビルドして返す
+                        <PopularArticleList articles={articles} />
                 </div>
         );
 }
